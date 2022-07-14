@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <script src="../bootstrap/dist/js/bootstrap.js"></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/player.css">
+  <style class="text/css">
+    .a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+
+<body>
+
+  <header>
+    <!-- 导航栏 -->
+
+    <div id="bar01">
+      <div id="left_bar">
+        <div class="left_bar_sp"><img src="../images/播放标志01.svg" alt=""><a href="../index.html">首页</a> </div>
+        <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'" onMouseOut="this.className='left_bar_sp'"><a
+            href="../websit/comic.html">番剧</a>
+        </div>
+        <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'" onMouseOut="this.className='left_bar_sp'">直播
+        </div>
+        <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'" onMouseOut="this.className='left_bar_sp'">
+          游戏中心</div>
+        <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'" onMouseOut="this.className='left_bar_sp'">
+          会员购</div>
+        <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'" onMouseOut="this.className='left_bar_sp'">漫画
+        </div>
+        <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'" onMouseOut="this.className='left_bar_sp'">赛事
+        </div>
+        <div class="left_bar_03">毕业季</div>
+        <div class="left_bar_sp"><img src="../images/下载01.svg" alt="">下载客户端</div>
+      </div>
+      <div class="input">
+        <input type="text" name="user_name" placeholder="搜索" />
+        <img src="../images/206搜索.png" alt="">
+      </div>
+      <div id="right_bar">
+        <div class=""><span id="login_m" style="background-color: #f7f7f7;" onclick="login_v()">登录</span>
+        </div>
+        <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+          onMouseOut="this.className='right_bar_sp'"><img src="../images/推荐01.svg" alt="">
+          <span>大会员</span>
+        </div>
+        <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+          onMouseOut="this.className='right_bar_sp'"><img src="../images/信息01.svg" alt=""> <span>消息</span>
+        </div>
+        <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+          onMouseOut="this.className='right_bar_sp'"><img src="../images/动态01.svg" alt=""> <span>动态</span>
+        </div>
+        <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+          onMouseOut="this.className='right_bar_sp'"><img src="../images/收藏01.svg" alt=""> <span>收藏</span>
+        </div>
+        <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+          onMouseOut="this.className='right_bar_sp'"><img src="../images/历史01.svg" alt=""> <span>历史</span>
+        </div>
+        <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+          onMouseOut="this.className='right_bar_sp'"><img src="../images/创作中心01.svg" alt="">
+          <span>创作中心</span>
+        </div>
+        <div class="right_bar_sb"><span style="color: white;"><img src="../images/投稿.svg" alt="">投稿</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-sm-3 col-md-3 col-lg-3" style="width: 14%;">
+        <a href="#"><img src="../images/专栏.png" alt="" width="120px" htight="60px"></a>
+        <div style="height: 34px;"></div>
+        <a href="#" target="_self" class="a"><img src="../images/1-1.png" alt="" width="28px" height="28px"
+            hspace="30px">
+          <span style="margin-left: 22px; font-size: 14px; color: rgb(0, 140, 255);">推荐</span></a>
+        <div style="height: 34px;"></div>
+        <a href="#" target="_self" class="a"><img src="../images/2.png" alt="" width="28px" height="28px" hspace="30px">
+          <span style="margin-left: 22px; font-size: 14px; color: black;">动画</span></a>
+        <div style="height: 34px;"></div>
+        <a href="#" target="_self" class="a"><img src="../images/3.png" alt="" width="28px" height="28px" hspace="30px">
+          <span style="margin-left: 22px; font-size: 14px; color: black;">游戏</span></a>
+        <div style="height: 34px;"></div>
+        <a href="#" target="_self" class="a"><img src="../images/4.png" alt="" width="28px" height="28px" hspace="30px">
+          <span style="margin-left: 22px; font-size: 14px; color: black;">影视</span></a>
+        <div style="height: 34px;"></div>
+        <a href="#" target="_self" class="a"><img src="../images/5.png" alt="" width="28px" height="28px" hspace="30px">
+          <span style="margin-left: 22px; font-size: 14px; color: black;">生活</span></a>
+        <div style="height: 34px;"></div>
+        <a href="#" target="_self" class="a"><img src="../images/6.png" alt="" width="28px" height="28px" hspace="30px">
+          <span style="margin-left: 22px; font-size: 14px; color: black;">兴趣</span></a>
+        <div style="height: 34px;"></div>
+        <a href="#" target="_self" class="a"><img src="../images/7.png" alt="" width="28px" height="28px" hspace="30px">
+          <span style="margin-left: 22px; font-size: 14px; color: black;">轻小说</span></a>
+        <div style="height: 34px;"></div>
+        <a href="#" target="_self" class="a"><img src="../images/8.png" alt="" width="28px" height="28px" hspace="30px">
+          <span style="margin-left: 22px; font-size: 14px; color: black;">科技</span></a>
+        <div style="height: 34px;"></div>
+        <a href="#" target="_self" class="a"><img src="../images/9.png" alt="" width="28px" height="28px" hspace="30px">
+          <span style="margin-left: 22px; font-size: 14px; color: black;">笔记</span></a>
+        <div style="height: 34px;"></div>
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-6" style="width: 45%;margin-right: 20px;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+          style="background-color: #87CEFA">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 0"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../images/轮1.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/轮2.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/轮3.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/轮4.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/轮5.webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+        <div class="row">
+          <div class="mb-3" style="border-bottom: 1px solid rgb(244, 244, 244);">
+            <h6 class="mt-4">推荐文章</h6>
+            <div class="row mt-3">
+              <div class="col-sm-9 col-md-9 col-lg-9">
+                <a href="#" style="color: black;" class="a">
+                  <h5 class="card-title">一张玩家做的航母图片，被当成真新闻全球转发</h5>
+                </a>
+                <p class="card-text" style="font-size: 13px;color:darkgray;">
+                  我想几十年前的人们怎么也想不到，游戏画面有朝一日会被当成现实中的新闻到处转发。不过这种事情...</p>
+                <p class="card-text" style="font-size: 13px;color:darkgray;"><small class="text-muted">Last updated 3
+                    mins ago</small></p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="../images/11.webp.jpg" class="img-rounded w-100" alt="..."
+                  style="max-width: 200px;max-height: 200px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mt-3" style="border-bottom: 1px solid rgb(244, 244, 244);">
+            <div class="row">
+              <div class="col-sm-9 col-md-9 col-lg-9">
+                <a href="#" style="color: black;" class="a">
+                  <h5 class="card-title">【间谍过家家】名为“他人”的乌托邦 [影评]</h5>
+                </a>
+                <p class="card-text" style="font-size: 13px;color:darkgray;">
+                  家，居也。从宀，豭（jiā，公猪，泛指猪）省声。——《说文解字》“家”是个会意字，其甲骨文字...</p>
+                <p class="card-text" style="font-size: 13px;color:darkgray;"><small class="text-muted">Last updated 3
+                    mins ago</small></p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="../images/22.webp.jpg" class="img-rounded w-100" alt="..."
+                  style="max-width: 200px;max-height: 200px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mt-3" style="border-bottom: 1px solid rgb(244, 244, 244);">
+            <div class="row">
+              <div class="col-sm-9 col-md-9 col-lg-9">
+                <a href="#" style="color: black;" class="a">
+                  <h5 class="card-title">2022年7月新番该追什么作品？</h5>
+                </a>
+                <p class="card-text" style="font-size: 13px;color:darkgray;">
+                  每个季度惯例的新番前瞻与导视专栏，简单的说一说七月对我来说比较可看的一些新番。希望喜欢这...</p>
+                <p class="card-text" style="font-size: 13px;color:darkgray;"><small class="text-muted">Last updated 3
+                    mins ago</small></p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="../images/33.webp.jpg" class="img-rounded w-100" alt="..."
+                  style="max-width: 200px;max-height: 200px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mt-3" style="border-bottom: 1px solid rgb(244, 244, 244);">
+            <div class="row">
+              <div class="col-sm-9 col-md-9 col-lg-9">
+                <a href="#" style="color: black;" class="a">
+                  <h5 class="card-title">集中营里的中国爱人</h5>
+                </a>
+                <p class="card-text" style="font-size: 13px;color:darkgray;">「你为什么要花这么多时间调查你外祖母？」「因为所有人遗忘了她。」 撰稿｜Ling 
+                  编辑｜鲜 于校...</p>
+                <p class="card-text" style="font-size: 13px;color:darkgray;"><small class="text-muted">Last updated 3
+                    mins ago</small></p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="../images/44.webp.jpg" class="img-rounded w-100" alt="..."
+                  style="max-width: 200px;max-height: 200px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mt-3" style="border-bottom: 1px solid rgb(244, 244, 244);">
+            <div class="row">
+              <div class="col-sm-9 col-md-9 col-lg-9">
+                <a href="#" style="color: black;" class="a">
+                  <h5 class="card-title">【书评】《Haunted（肠子）》：感官刺激下的迷惘内核</h5>
+                </a>
+                <p class="card-text" style="font-size: 13px;color:darkgray;">
+                  这本书的译名是非常不贴切的，所以我使用了它的原名。这本书的作者是恰克·帕拉尼克。这本书确实...</p>
+                <p class="card-text" style="font-size: 13px;color:darkgray;"><small class="text-muted">Last updated 3
+                    mins ago</small></p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="../images/55.webp.jpg" class="img-rounded w-100" alt="..."
+                  style="max-width: 200px;max-height: 200px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mt-3" style="border-bottom: 1px solid rgb(244, 244, 244);">
+            <div class="row">
+              <div class="col-sm-9 col-md-9 col-lg-9">
+                <a href="#" style="color: black;" class="a">
+                  <h5 class="card-title">被黑上热搜，蜜雪冰城到底怎么了？</h5>
+                </a>
+                <p class="card-text" style="font-size: 13px;color:darkgray;">
+                  大家好，我是小肥良（已黑化）。这几天如果你有点蜜雪冰城的外卖，你大概会留意到它们的LOGO...</p>
+                <p class="card-text" style="font-size: 13px;color:darkgray;"><small class="text-muted">Last updated 3
+                    mins ago</small></p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="../images/66.webp.jpg" class="img-rounded w-100" alt="..."
+                  style="max-width: 200px;max-height: 200px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mt-3" style="border-bottom: 1px solid rgb(244, 244, 244);">
+            <div class="row">
+              <div class="col-sm-9 col-md-9 col-lg-9">
+                <a href="#" style="color: black;" class="a">
+                  <h5 class="card-title">【原创童话】雪人先生和兔子小姐</h5>
+                </a>
+                <p class="card-text" style="font-size: 13px;color:darkgray;">点击进入查看全文></p>
+                <p class="card-text" style="font-size: 13px;color:darkgray;"><small class="text-muted">Last updated 3
+                    mins ago</small></p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="../images/77.jpg" class="img-rounded" alt="..." style="max-width: 100px;max-height: 100px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mt-3" style="border-bottom: 1px solid rgb(244, 244, 244);">
+            <div class="row">
+              <div class="col-sm-9 col-md-9 col-lg-9">
+                <a href="#" style="color: black;" class="a">
+                  <h5 class="card-title">真正硬核的机器人策略游戏，尘封多年终于重见天日</h5>
+                </a>
+                <p class="card-text" style="font-size: 13px;color:darkgray;">视频版口味更佳：文/GameForce近日国内厂商紫龙上海工作室BlackJack
+                  Studio宣布，将与日本史...</p>
+                <p class="card-text" style="font-size: 13px;color:darkgray;"><small class="text-muted">Last updated 3
+                    mins ago</small></p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="../images/88.webp.jpg" class="img-rounded w-100" alt="..."
+                  style="max-width: 200px;max-height: 200px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 mt-3" style="border-bottom: 1px solid rgb(244, 244, 244);">
+            <div class="row">
+              <div class="col-sm-9 col-md-9 col-lg-9">
+                <a href="#" style="color: black;" class="a">
+                  <h5 class="card-title">从宫崎骏到《爱死机》，他们都喜爱的“蒸汽朋克”是什么？</h5>
+                </a>
+                <p class="card-text" style="font-size: 13px;color:darkgray;">作者/拉笑儿·李
+                  编辑/若风“这些作品在复古的同时，试图畅想的是我们以为自己“本可以拥有”的现...</p>
+                <p class="card-text" style="font-size: 13px;color:darkgray;"><small class="text-muted">Last updated 3
+                    mins ago</small></p>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="../images/99.webp.jpg" class="img-rounded w-100" alt="..."
+                  style="max-width: 200px;max-height: 200px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-sm-3 col-md-3 col-lg-3" style="width: 21%">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input class="form-control me-0" type="search" placeholder="搜索专栏文章">
+              <button class="btn" type="submit"><img src="../images/搜索_search.svg" alt=""></button>
+            </form>
+          </div>
+        </nav>
+
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="navbar-brand" href="#">排行榜</div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a style="width: 40px;font-size: 12px;" class="nav-link text-black active" aria-current="page"
+                    href="#">昨天</a>
+                </li>
+                <li class="nav-item">
+                  <a style="width: 40px;font-size: 12px;" class="nav-link text-black" href="#">今天</a>
+                </li>
+                <li class="nav-item">
+                  <a style="width: 40px;font-size: 12px;" class="nav-link text-black" href="#">周榜</a>
+                </li>
+                <li class="nav-item">
+                  <a style="width: 40px;font-size: 12px;" class="nav-link text-black" href="#">月榜</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </nav>
+        <ul class="list-group" style="margin-top: -10px;border-top:1px solid #eaeaea;width: 260px;">
+          <li class="list-group-item" style="border:none;height: 40px;width: 260px;"><span
+              style="width: 18px;height:18px;margin-left:5px;margin-right: 5px; display:inline-block;text-align: center;line-height: 18px;background-color: #e74848;border-radius: 3px;font-size: 10px; color: white;">1</span><a
+              href="#" style="color: #4a4a4a; font-size: 13px;" class="a">魔导国东征记－王者归来（644）...</a>
+          </li>
+          <li class="list-group-item" style="border:none;height: 40px;width: 260px;"><span
+              style="width: 18px;height:18px;margin-left:5px;margin-right: 5px; display:inline-block;text-align: center;line-height: 18px;background-color: #ec702d;border-radius: 3px;font-size: 10px; color: white;">2</span><a
+              href="#" style="color: #4a4a4a; font-size: 13px;" class="a">不做格局怪，富婆怎么爱...</a></li>
+          <li class="list-group-item" style="border:none;height: 40px;width: 260px;"><span
+              style="width: 18px;height:18px;margin-left:5px;margin-right: 5px; display:inline-block;text-align: center;line-height: 18px;background-color: #fca935;border-radius: 3px;font-size: 10px; color: white;">3</span><a
+              href="#" style="color: #4a4a4a; font-size: 13px;" class="a">动画|无法忘记的事：创作小结...</a>
+          </li>
+          <li class="list-group-item" style="border:none;height: 40px;width: 260px;"><span
+              style="width: 18px;height:18px;margin-left:5px;margin-right: 5px; display:inline-block;text-align: center;line-height: 18px;background-color: #eaeaea;border-radius: 3px;font-size: 10px; color: white;">4</span><a
+              href="#" style="color: #4a4a4a; font-size: 13px;" class="a">【笔吧】今年最薄最精致的全...</a>
+          </li>
+          <li class="list-group-item" style="border:none;height: 40px;width: 260px;"><span
+              style="width: 18px;height:18px;margin-left:5px;margin-right: 5px; display:inline-block;text-align: center;line-height: 18px;background-color: #eaeaea;border-radius: 3px;font-size: 10px; color: white;">5</span><a
+              href="#" style="color: #4a4a4a; font-size: 13px;" class="a">虚拟主播的财富密码，已经...</a></li>
+          <li class="list-group-item" style="border:none;height: 40px;width: 260px;"><span
+              style="width: 18px;height:18px;margin-left:5px;margin-right: 5px; display:inline-block;text-align: center;line-height: 18px;background-color: #eaeaea;border-radius: 3px;font-size: 10px; color: white;">6</span><a
+              href="#" style="color: #4a4a4a; font-size: 13px;" class="a">新规后科目一考试考点汇总...</a></li>
+          <li class="list-group-item" style="border:none;height: 40px;width: 260px;"><span
+              style="width: 18px;height:18px;margin-left:5px;margin-right: 5px; display:inline-block;text-align: center;line-height: 18px;background-color: #eaeaea;border-radius: 3px;font-size: 10px; color: white;">7</span><a
+              href="#" style="color: #4a4a4a; font-size: 13px;" class="a">一到夏天，我就想看他的电影...</a>
+          </li>
+          <li class="list-group-item" style="border:none;height: 40px;width: 260px;"><span
+              style="width: 18px;height:18px;margin-left:5px;margin-right: 5px; display:inline-block;text-align: center;line-height: 18px;background-color: #eaeaea;border-radius: 3px;font-size: 10px; color: white;">8</span><a
+              href="#" style="color: #4a4a4a; font-size: 13px;" class="a">【梦娇时政预测考点】...</a></li>
+          <li class="list-group-item" style="border:none;height: 40px;width: 260px;"><span
+              style="width: 18px;height:18px;margin-left:5px;margin-right: 5px; display:inline-block;text-align: center;line-height: 18px;background-color: #eaeaea;border-radius: 3px;font-size: 10px; color: white;">9</span><a
+              href="#" style="color: #4a4a4a; font-size: 13px;" class="a">Jo的一周课表（6.20-6.26）...</a></li>
+          <li class="list-group-item" style="border:none;height: 40px;width: 260px;"><span
+              style="width: 18px;height:18px;margin-left:5px;margin-right: 5px; display:inline-block;text-align: center;line-height: 18px;background-color: #eaeaea;border-radius: 3px;font-size: 10px; color: white;">10</span><a
+              href="#" style="color: #4a4a4a; font-size: 13px;" class="a">科目一三小时精髓课｜1基础...</a>
+          </li>
+          <li
+            style="border:none;height: 20px;line-height: 20px; width: 260px;text-align: center;border-radius: 4px;background-color: #a8a8a8; ">
+            <a href="#" class="a" style="color: rgb(255, 255, 255);">查看完整榜单</a>
+          </li>
+        </ul>
+
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">最新投稿up主</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#" class="a" style="color: black;"><img src="../images/1.png" class="img-rounded" alt="..."
+                style="width: 25px; height: 25px;">
+              <span>
+                零星琐碎
+              </span>
+              <p>
+                刚刚投稿了...
+              </p>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#" class="a" style="color: black;"><img src="../images/1.png" class="img-rounded" alt="..."
+                style="width: 25px; height: 25px;">
+              <span>
+                prettytianshi
+              </span>
+              <p>
+                刚刚投稿了...
+              </p>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#" class="a" style="color: black;"><img src="../images/1.png" class="img-rounded" alt="..."
+                style="width: 25px; height: 25px;">
+              <span>
+                中指的申论教室
+              </span>
+              <p>
+                刚刚投稿了...
+              </p>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#" class="a" style="color: black;"><img src="../images/1.png" class="img-rounded" alt="..."
+                style="width: 25px; height: 25px;">
+              <span>
+                师范帮
+              </span>
+              <p>
+                刚刚投稿了...
+              </p>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#" class="a" style="color: black;"><img src="../images/1.png" class="img-rounded" alt="..."
+                style="width: 25px; height: 25px;">
+              <span>
+                上海威励
+              </span>
+              <p>
+                刚刚投稿了...
+              </p>
+            </a>
+          </li>
+        </ul>
+
+        <div class="card">
+          <h5 class="card-header bg-white">更多</h5>
+          <div class="card-body">
+            <p class="card-text">
+              <img src="../images/1.png" class="img-rounded" alt="..." style="width: 25px; height: 25px;">成为创作者
+            <p>申请成为up主</p>
+            </p>
+            <p class="card-text">
+              <img src="../images/1.png" class="img-rounded" alt="..." style="width: 25px; height: 25px;">专栏帮助
+            <p>查看专栏使用说明</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</html>

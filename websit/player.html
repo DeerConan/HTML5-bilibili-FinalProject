@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魔法使黎明期第2集-番剧-高清正版在线观看-bilibili-哔哩哔哩</title>
+    <link rel="stylesheet" href="../css/player.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- 导航栏 -->
+
+            <div id="bar01">
+                <div id="left_bar">
+                    <div class="left_bar_sp"><img src="../images/播放标志01.svg" alt=""><a href="../index.html">首页</a>  </div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'"><a href="../websit/comic.html">番剧</a></div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">直播</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">游戏中心</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">会员购</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">漫画</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">赛事</div>
+                    <div class="left_bar_03">毕业季</div>
+                    <div class="left_bar_sp"><img src="../images/下载01.svg" alt="">下载客户端</div>
+                </div>
+                <div class="input">
+                    <input type="text" name="user_name" placeholder="搜索" />
+                    <img src="../images/206搜索.png" alt="">
+                </div>
+                <div id="right_bar">
+                    <div class=""><span id="login_m" style="background-color: #f7f7f7;" onclick="login_v()">登录</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="../images/推荐01.svg" alt="">
+                        <span>大会员</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="../images/信息01.svg" alt=""> <span>消息</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="../images/动态01.svg" alt=""> <span>动态</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="../images/收藏01.svg" alt=""> <span>收藏</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="../images/历史01.svg" alt=""> <span>历史</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="../images/创作中心01.svg" alt="">
+                        <span>创作中心</span>
+                    </div>
+                    <div class="right_bar_sb"><span style="color: white;"><img src="../images/投稿.svg" alt="">投稿</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="left">
+                <div class="container1">
+                    <video onclick="play(event)" src="../video/魔法使黎明.mp4" id="video"></video>
+                    <div class="controls">
+                        <button style="margin-left: 5px; margin-right: 5px;" onclick="play(event)"><i class="fa fa-play"></i><img src="../images/播放标志.svg" alt="" ><i class="fa fa-pause"></i></button>
+                        <!-- <button onclick="rewind(event)"><i class="fa fa-fast-backward"></i></button> -->
+                        <div class="timeline">
+                            <div class="bar">
+                                <div class="inner"></div>
+                            </div>
+                        </div>
+                        <button style="margin-left: 5px; margin-right: 5px;" onclick="forward(event)"><img src="../images/快进.svg" alt=""><i class="fa fa-fast-forward"></i></button>
+                        <button style="margin-left: 5px; margin-right: 5px;" onclick="fullScreen(event)"><img src="../images/全屏.svg" alt=""><i class="fa fa-expand"></i></button>
+                        <button style="margin-left: 5px; margin-right: 5px;" onclick="download(event)"><img src="../images/下载.svg" alt=""><i class="fa fa-cloud-download"> </i></button>
+                    </div>
+                </div>
+                <div class="video_bottom">
+                    <div class="watch"><b>2000+</b>人正在看,已装填1453条弹幕</div>
+                    <div class="watch_right">
+                        <div class="barrage">
+                            <div class="circle">弹</div>
+                        </div>
+                        <div class="danmu">
+                            <img src="../images/setup.png" alt="">
+                        </div>
+                        <div class="inputbar">
+                            <div class="input-left">
+                                <div class="user-wrap">
+                                    请先<a href="#">登录</a>或<a href="#">注册</a>
+                                </div>
+                                <div class="barrage-etiquette">弹幕礼仪<span><img src="../images/right.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="send-button">发送</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 媒体 -->
+                <div class="media-wrapper">
+                    <div class="media-bar">
+                        <div class="like-box">
+                            <img src="../images/like.png" alt="">
+                            <span class="span-text">7.4万</span>
+                        </div>
+                        <div class="like-box">
+                            <img src="../images/coin.png" alt="">
+                            <span class="span-text">1.1万</span>
+                        </div>
+                        <div class="like-box">
+                            <img src="../images/share.png" alt="">
+                            <span class="span-text">分享</span>
+                        </div>
+                        <div class="like-box">
+                            <img src="../images/mobile.png" alt="">
+                            <span class="span-phonetext">用手机观看</span>
+                        </div>
+                        <div class="like-box">
+                            <img src="../images/watch_together.png" alt=""
+                                style="width: 35px;height: 40px;margin-top:-6px;margin-left:20px;">
+                            <span class="span-phonetext">一起看</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-box">
+                    <a href="#" class="media-box-a">
+                        <img src="../images/media-img.webp" alt="">
+                    </a>
+                    <div class="media-right">
+                        <a class="media-title">魔法使黎明期</a>
+                        <div class="media-count">649.5万播放&nbsp;&nbsp;·&nbsp;&nbsp;1.1万弹幕&nbsp;&nbsp;·&nbsp;&nbsp;32.5万追番
+                        </div>
+                        <div class="media-drama">
+                            <a href="#" class="drama-a" target="_blank">番剧</a>
+                            <span class="drama-span">连载中</span>
+                            <a href="#" class="drama-a" target="_blank" style="margin-right: 16px;">BV1ir4y147VM</a>
+                            <span class="drama-right">
+                                <i class="line"></i>
+                                <span class="drama-info">
+                                    <a href="#" target="_blank" class="drama-info-a">
+                                        <div class="drama-img">
+                                            <img src="../images/drama-img.webp" alt="">
+                                        </div>
+                                        <span class="up-name">哔哩哔哩番剧</span>
+                                    </a>
+                                    <span class="focus">+ 关注</span>
+                                </span>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="#" target="_blank" class="dramabox">
+                                <span class="drama-text">
+                                    我至今，依然无法想起。
+                                    自己究竟是什么——。
+                                    魔法学校的学生塞维尔没有任何入学前的记忆。
+                                    在不知自己为何会在这里的状态下，连校园生活也有种莫名的空虚感，
+                                    由于不知道该如何努力，学习成绩也总是倒数第一。
+                                    对于这样的塞维尔，魔法学校的校长阿尔巴斯突然交给他一项危险的特别实习。
+                                    「我希望你前往魔女狩猎尚未根绝的区域，宣传魔法的实用性。」
+                                    在魔女与教会的战争结束数年后——
+                                    世界还尚未完全接受魔女与魔法。
+                                    时值魔法使黎明期。
+                                    这是一个无名少年和隐藏着各自的心伤的同伴们一起寻找自我的故事。
+                                </span>
+                                <i style>展开</i>
+                            </a>
+                        </div>
+                        <div class="media-score">
+                            <span style="display: flex;">
+                                <div class="score">2.3</div>
+                                <div class="fen">分</div>
+                            </span>
+                            <p>2万人评分</p>
+                        </div>
+                        <div class="media-rightbar">
+                            <div class="appraise">
+                                <ul class="starbox">
+                                    <li>
+                                        <img src="../images/star-border.png" alt="" class="star-border">
+                                    </li>
+                                    <li>
+                                        <img src="../images/star-border.png" alt="" class="star-border">
+                                    </li>
+                                    <li>
+                                        <img src="../images/star-border.png" alt="" class="star-border">
+                                    </li>
+                                    <li>
+                                        <img src="../images/star-border.png" alt="" class="star-border">
+                                    </li>
+                                    <li>
+                                        <img src="../images/star-border.png" alt="" class="star-border">
+                                    </li>
+                                </ul>
+                                <span>点评</span>
+                            </div>
+                            <div class="chase-box">
+                                <div class="love">
+                                    <svg t="1656156359217" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" p-id="1360" width="15" height="20">
+                                        <path
+                                            d="M32 407.584a279.584 279.584 0 0 1 480-194.944 279.584 279.584 0 0 1 480 194.944 278.144 278.144 0 0 1-113.024 224.512L562.592 892.8a96 96 0 0 1-124.416-1.952l-308.16-270.688A278.976 278.976 0 0 1 32 407.584z"
+                                            p-id="1361" fill="#ffffff"></path>
+                                    </svg>
+                                </div>
+                                <span>追番</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 点评 -->
+                <div class="review">
+                    <div class="review-title">
+                        <div class="review-h4">点评</div>
+                        <a href="" class="select-all">查看全部</a>
+                    </div>
+                    <div class="review-list">
+                        <div class="review-item">
+                            <a href="#" target="_blank">
+                                <div class="review-body">
+                                    <div class="review-header">
+                                        <a href="#" target="_blank" class="review-author">是豆豆芽吖</a>
+                                        <ul class="review-star">
+                                            <li class="star-li">
+                                                <img src="../images/star.png" alt="" class="star">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="review-bodytitle">从看第一集就一直在期待</div>
+                                    <p class="review-content">
+                                        终于等到8:00看第一集就一直在期待？知道b站慢了几集，就去找资源或用其他网站看。。。质量有亿点差。角色智商堪忧等等。男主让人捉急。设定奇奇怪怪结果？？？关键老子的零和佣兵。。。。。。非常恶心人的场面之后，零也算是和佣兵打情骂俏开了句玩笑，包括之后，出去俩魔女独自交谈，零说早就愿意为了佣兵放弃不老不死，和他一起衰老。。。等等。关键你刚才才？？？？？？？可以亲下脸皮差不多得了，毕竟亲人，而且男主同伴可以握他手补魔？？？？？关于“补魔”，续作男主本来就是个“蓝瓶”，别说啥悲惨过去（零要保护他不是轻而
+                                    </p>
+                                    <span class="leftdown-time">05-30</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="review-item">
+                            <a href="#" target="_blank">
+                                <div class="review-body">
+                                    <div class="review-header">
+                                        <a href="#" target="_blank" class="review-author">旋转突进的鲜血魔娘</a>
+                                        <ul class="review-star">
+                                            <li class="star-li">
+                                                <img src="../images/star.png" alt="" class="star">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="review-bodytitle">我一条条告诉你我为什么打一星</div>
+                                    <p class="review-content">
+                                        某理中客自己搁那儿发表意见可以，我在你下面发表发表评论你就看不惯了是吧？行，你觉得我直接骂你你不高兴了，那我一条一条告诉你我为什么打一星。
+                                        第一，你说零和佣兵不是主角，发糖喧宾夺主导致故事崩坏，怎么？配角秀一下恩爱，发一下糖还能让故事崩坏了？职业写手在你眼里就这么没能力吗？你觉得那些群像剧怎么写的？
+                                        第二，你说不是传统意义的ntr，是零主动亲上去，那我告诉你，零那是被作者按着头轻上去的，你难道觉得如果某作者写了本小说，然后内容是二战全世界都向小胡子投向了，然后作者告诉你小说里各个国家是主动投
+                                    </p>
+                                    <span class="leftdown-time">05-31</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="review-item">
+                            <a href="#" target="_blank">
+                                <div class="review-body">
+                                    <div class="review-header">
+                                        <a href="#" target="_blank" class="review-author">嘤嘤酱ブンブン</a>
+                                        <ul class="review-star">
+                                            <li class="star-li">
+                                                <img src="../images/star.png" alt="" class="star">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                            <li>
+                                                <img src="../images/star-border.png" alt="" class="star-border">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="review-bodytitle">如果你是为了看佣兵和零来的还是弃了比较好！</div>
+                                    <p class="review-content">
+                                        这部续作无疑就是来恶心前作的粉丝和读者，我看到零和男主在佣兵面前嘴对嘴亲上当场炸锅，这作者是牛头人亲爹吗？所以为了佣兵和零与其看这个还不如把零书补一下！。。。。。。。。。
+                                    </p>
+                                    <span class="leftdown-time">05-30</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 评论区 -->
+                <div class="comment-box">
+                    <div class="c-head">
+                        <span>656</span>
+                        <span>评论</span>
+                    </div>
+                    <div class="comment">
+                        <div class="notice"></div>
+                        <div class="comment-header">
+                            <div class="order-box">
+                                <ul class="order-ul">
+                                    <li class="hot-sort">按热度排序</li>
+                                    <li class="hot-sort" style="color: #212121;">按时间排序</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="no-login">
+                            <div class="user-face">
+                                <div class="noface">
+                                    <img src="../images/noface.gif" alt="" class="noface-img">
+                                </div>
+                            </div>
+                            <div class="textarea-box">
+                                <div class="text-box">
+                                    <div class="text">
+                                        请先<a href="#" class="login-btn">登录</a>后发表评论(・ω・)
+                                    </div>
+                                </div>
+                                <button type="submit" class="sendtext-btn">发表评论</button>
+                            </div>
+                            <div class="comment-emjio">
+                                <img src="../images/emjio.png" alt="" class="emjio">
+                                <span class="emjio-text">表情</span>
+                            </div>
+                        </div>
+                        <div class="comment-list">
+                            <div class="userface">
+                                <a href="#" target="_blank">
+                                    <img src="../images/emjio1.webp" alt="" class="user-emjio">
+                                </a>
+                            </div>
+                            <div class="user-comment">
+                                <div class="user">
+                                    <a href="#" target="_blank" class="user-name">敬你春风野火-</a>
+                                    <a href="#" target="_blank" class="level">
+                                        <svg width="22" height="14" viewBox="0 0 26 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2.11816" y="2.32031" width="22" height="9.67113" fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.3302 1C24.6689 1 25.0076 1.3378 24.9237 1.6756V11.8946C24.9237 12.2324 24.6689 12.5702 24.2455 12.5702H1.97764C1.63897 12.5702 1.30029 12.3169 1.30029 11.8946V2.858C1.30029 2.5202 1.5543 2.1824 1.97764 2.1824H15.948V1.6756C15.948 1.3378 16.202 1 16.6253 1H24.3302ZM10.0218 3.6182H9.34444C9.09043 3.6182 8.83643 3.8715 8.83643 4.1249V8.2632C8.83643 8.4343 8.83643 8.6901 8.92109 8.7699L11.2918 11.1338C11.4424 11.2846 11.7936 11.3014 11.8698 11.3033L11.8845 11.3035C11.8845 11.3035 12.3078 11.3035 12.4772 11.1338L15.0172 8.7699C15.1019 8.6854 15.1019 8.5165 15.1019 8.3476V4.2093C15.1019 3.956 14.8479 3.7026 14.5939 3.7026H13.9174C13.6625 3.7026 13.4085 3.956 13.4085 4.2093V8.0098L11.9692 9.4447L10.5298 8.0098V4.1249C10.5298 3.8715 10.2758 3.6182 10.0218 3.6182ZM3.92511 3.6182H3.24776C2.99375 3.6182 2.73975 3.8715 2.73975 4.1249V10.7968C2.73975 11.0501 2.99375 11.3035 3.24776 11.3035H7.31186C7.56587 11.3035 7.81987 11.0501 7.81987 10.7968V10.1212C7.81987 9.8669 7.56587 9.6144 7.31186 9.6144H4.43312V4.1249C4.43312 3.8715 4.17912 3.6182 3.92511 3.6182ZM23.0608 2.3506H17.8114C17.5574 2.3506 17.3042 2.6039 17.3042 2.8573V7.1645C17.3042 7.4178 17.5574 7.6712 17.8114 7.6712H21.8755V9.6137H17.8114C17.5574 9.6137 17.3042 9.8662 17.3042 10.1204V10.796C17.3042 11.0494 17.5574 11.3027 17.8114 11.3027H23.0608C23.3148 11.3027 23.5688 11.0494 23.5688 10.796V6.4888C23.5688 6.2355 23.3148 5.9821 23.0608 5.9821H18.9976V4.1241H23.0608C23.3148 4.1241 23.5688 3.8708 23.5688 3.6174V2.8573C23.5688 2.6039 23.3148 2.3506 23.0608 2.3506Z"
+                                                fill="#EE672A" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" target="_blank" class="nameplate-icon">
+                                        <img src="../images/nameplate.webp" alt="" class="nameplate-img">
+                                    </a>
+                                </div>
+                                <p class="nameplate-text">传下去，今日的口号是：食之无味，弃之可惜。</p>
+                                <div class="gray-text">
+                                    <span class="location-time">
+                                        <span>2022-05-23 20:11</span>
+                                    </span>
+                                    <span class="like">
+                                        <img src="../images/likeborder.png" alt="" class="likeborder">
+                                        <span>2002</span>
+                                    </span>
+                                    <span class="unlike">
+                                        <img src="../images/unlike.png" alt="" class="unlikeborder">
+                                        <span class="answer">回复</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="userface">
+                                <a href="#" target="_blank">
+                                    <img src="../images/emjio2.webp" alt="" class="user-emjio">
+                                </a>
+                            </div>
+                            <div class="user-comment">
+                                <div class="user">
+                                    <a href="#" target="_blank" class="user-name">御坂14952-</a>
+                                    <a href="#" target="_blank" class="level">
+                                        <svg width="22" height="14" viewBox="0 0 26 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2.11816" y="2.32031" width="22" height="9.67113" fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.3302 1C24.6689 1 25.0076 1.3378 24.9237 1.6756V11.8946C24.9237 12.2324 24.6689 12.5702 24.2455 12.5702H1.97764C1.63897 12.5702 1.30029 12.3169 1.30029 11.8946V2.858C1.30029 2.5202 1.5543 2.1824 1.97764 2.1824H15.948V1.6756C15.948 1.3378 16.202 1 16.6253 1H24.3302ZM10.0218 3.6182H9.34444C9.09043 3.6182 8.83643 3.8715 8.83643 4.1249V8.2632C8.83643 8.4343 8.83643 8.6901 8.92109 8.7699L11.2918 11.1338C11.4424 11.2846 11.7936 11.3014 11.8698 11.3033L11.8845 11.3035C11.8845 11.3035 12.3078 11.3035 12.4772 11.1338L15.0172 8.7699C15.1019 8.6854 15.1019 8.5165 15.1019 8.3476V4.2093C15.1019 3.956 14.8479 3.7026 14.5939 3.7026H13.9174C13.6625 3.7026 13.4085 3.956 13.4085 4.2093V8.0098L11.9692 9.4447L10.5298 8.0098V4.1249C10.5298 3.8715 10.2758 3.6182 10.0218 3.6182ZM3.92511 3.6182H3.24776C2.99375 3.6182 2.73975 3.8715 2.73975 4.1249V10.7968C2.73975 11.0501 2.99375 11.3035 3.24776 11.3035H7.31186C7.56587 11.3035 7.81987 11.0501 7.81987 10.7968V10.1212C7.81987 9.8669 7.56587 9.6144 7.31186 9.6144H4.43312V4.1249C4.43312 3.8715 4.17912 3.6182 3.92511 3.6182ZM23.0608 2.3506H17.8114C17.5574 2.3506 17.3042 2.6039 17.3042 2.8573V7.1645C17.3042 7.4178 17.5574 7.6712 17.8114 7.6712H21.8755V9.6137H17.8114C17.5574 9.6137 17.3042 9.8662 17.3042 10.1204V10.796C17.3042 11.0494 17.5574 11.3027 17.8114 11.3027H23.0608C23.3148 11.3027 23.5688 11.0494 23.5688 10.796V6.4888C23.5688 6.2355 23.3148 5.9821 23.0608 5.9821H18.9976V4.1241H23.0608C23.3148 4.1241 23.5688 3.8708 23.5688 3.6174V2.8573C23.5688 2.6039 23.3148 2.3506 23.0608 2.3506Z"
+                                                fill="#EE672A" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <p class="nameplate-text">曹公，我理解了，何为“食之无味，弃之可惜”</p>
+                                <div class="gray-text">
+                                    <span class="location-time">
+                                        <span>2022-05-24 09:45</span>
+                                    </span>
+                                    <span class="like">
+                                        <img src="../images/likeborder.png" alt="" class="likeborder">
+                                        <span>11</span>
+                                    </span>
+                                    <span class="unlike">
+                                        <img src="../images/unlike.png" alt="" class="unlikeborder">
+                                        <span class="answer">回复</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="userface">
+                                <a href="#" target="_blank">
+                                    <img src="../images/emjio1.webp" alt="" class="user-emjio">
+                                </a>
+                            </div>
+                            <div class="user-comment">
+                                <div class="user">
+                                    <a href="#" target="_blank" class="user-name">敬你春风野火-</a>
+                                    <a href="#" target="_blank" class="level">
+                                        <svg width="22" height="14" viewBox="0 0 26 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2.11816" y="2.32031" width="22" height="9.67113" fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.3302 1C24.6689 1 25.0076 1.3378 24.9237 1.6756V11.8946C24.9237 12.2324 24.6689 12.5702 24.2455 12.5702H1.97764C1.63897 12.5702 1.30029 12.3169 1.30029 11.8946V2.858C1.30029 2.5202 1.5543 2.1824 1.97764 2.1824H15.948V1.6756C15.948 1.3378 16.202 1 16.6253 1H24.3302ZM10.0218 3.6182H9.34444C9.09043 3.6182 8.83643 3.8715 8.83643 4.1249V8.2632C8.83643 8.4343 8.83643 8.6901 8.92109 8.7699L11.2918 11.1338C11.4424 11.2846 11.7936 11.3014 11.8698 11.3033L11.8845 11.3035C11.8845 11.3035 12.3078 11.3035 12.4772 11.1338L15.0172 8.7699C15.1019 8.6854 15.1019 8.5165 15.1019 8.3476V4.2093C15.1019 3.956 14.8479 3.7026 14.5939 3.7026H13.9174C13.6625 3.7026 13.4085 3.956 13.4085 4.2093V8.0098L11.9692 9.4447L10.5298 8.0098V4.1249C10.5298 3.8715 10.2758 3.6182 10.0218 3.6182ZM3.92511 3.6182H3.24776C2.99375 3.6182 2.73975 3.8715 2.73975 4.1249V10.7968C2.73975 11.0501 2.99375 11.3035 3.24776 11.3035H7.31186C7.56587 11.3035 7.81987 11.0501 7.81987 10.7968V10.1212C7.81987 9.8669 7.56587 9.6144 7.31186 9.6144H4.43312V4.1249C4.43312 3.8715 4.17912 3.6182 3.92511 3.6182ZM23.0608 2.3506H17.8114C17.5574 2.3506 17.3042 2.6039 17.3042 2.8573V7.1645C17.3042 7.4178 17.5574 7.6712 17.8114 7.6712H21.8755V9.6137H17.8114C17.5574 9.6137 17.3042 9.8662 17.3042 10.1204V10.796C17.3042 11.0494 17.5574 11.3027 17.8114 11.3027H23.0608C23.3148 11.3027 23.5688 11.0494 23.5688 10.796V6.4888C23.5688 6.2355 23.3148 5.9821 23.0608 5.9821H18.9976V4.1241H23.0608C23.3148 4.1241 23.5688 3.8708 23.5688 3.6174V2.8573C23.5688 2.6039 23.3148 2.3506 23.0608 2.3506Z"
+                                                fill="#EE672A" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" target="_blank" class="nameplate-icon">
+                                        <img src="../images/nameplate.webp" alt="" class="nameplate-img">
+                                    </a>
+                                </div>
+                                <p class="nameplate-text">传下去，今日的口号是：食之无味，弃之可惜。</p>
+                                <div class="gray-text">
+                                    <span class="location-time">
+                                        <span>2022-05-23 20:11</span>
+                                    </span>
+                                    <span class="like">
+                                        <img src="../images/likeborder.png" alt="" class="likeborder">
+                                        <span>2002</span>
+                                    </span>
+                                    <span class="unlike">
+                                        <img src="../images/unlike.png" alt="" class="unlikeborder">
+                                        <span class="answer">回复</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="userface">
+                                <a href="#" target="_blank">
+                                    <img src="../images/emjio2.webp" alt="" class="user-emjio">
+                                </a>
+                            </div>
+                            <div class="user-comment">
+                                <div class="user">
+                                    <a href="#" target="_blank" class="user-name">御坂14952-</a>
+                                    <a href="#" target="_blank" class="level">
+                                        <svg width="22" height="14" viewBox="0 0 26 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2.11816" y="2.32031" width="22" height="9.67113" fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.3302 1C24.6689 1 25.0076 1.3378 24.9237 1.6756V11.8946C24.9237 12.2324 24.6689 12.5702 24.2455 12.5702H1.97764C1.63897 12.5702 1.30029 12.3169 1.30029 11.8946V2.858C1.30029 2.5202 1.5543 2.1824 1.97764 2.1824H15.948V1.6756C15.948 1.3378 16.202 1 16.6253 1H24.3302ZM10.0218 3.6182H9.34444C9.09043 3.6182 8.83643 3.8715 8.83643 4.1249V8.2632C8.83643 8.4343 8.83643 8.6901 8.92109 8.7699L11.2918 11.1338C11.4424 11.2846 11.7936 11.3014 11.8698 11.3033L11.8845 11.3035C11.8845 11.3035 12.3078 11.3035 12.4772 11.1338L15.0172 8.7699C15.1019 8.6854 15.1019 8.5165 15.1019 8.3476V4.2093C15.1019 3.956 14.8479 3.7026 14.5939 3.7026H13.9174C13.6625 3.7026 13.4085 3.956 13.4085 4.2093V8.0098L11.9692 9.4447L10.5298 8.0098V4.1249C10.5298 3.8715 10.2758 3.6182 10.0218 3.6182ZM3.92511 3.6182H3.24776C2.99375 3.6182 2.73975 3.8715 2.73975 4.1249V10.7968C2.73975 11.0501 2.99375 11.3035 3.24776 11.3035H7.31186C7.56587 11.3035 7.81987 11.0501 7.81987 10.7968V10.1212C7.81987 9.8669 7.56587 9.6144 7.31186 9.6144H4.43312V4.1249C4.43312 3.8715 4.17912 3.6182 3.92511 3.6182ZM23.0608 2.3506H17.8114C17.5574 2.3506 17.3042 2.6039 17.3042 2.8573V7.1645C17.3042 7.4178 17.5574 7.6712 17.8114 7.6712H21.8755V9.6137H17.8114C17.5574 9.6137 17.3042 9.8662 17.3042 10.1204V10.796C17.3042 11.0494 17.5574 11.3027 17.8114 11.3027H23.0608C23.3148 11.3027 23.5688 11.0494 23.5688 10.796V6.4888C23.5688 6.2355 23.3148 5.9821 23.0608 5.9821H18.9976V4.1241H23.0608C23.3148 4.1241 23.5688 3.8708 23.5688 3.6174V2.8573C23.5688 2.6039 23.3148 2.3506 23.0608 2.3506Z"
+                                                fill="#EE672A" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <p class="nameplate-text">曹公，我理解了，何为“食之无味，弃之可惜”</p>
+                                <div class="gray-text">
+                                    <span class="location-time">
+                                        <span>2022-05-24 09:45</span>
+                                    </span>
+                                    <span class="like">
+                                        <img src="../images/likeborder.png" alt="" class="likeborder">
+                                        <span>11</span>
+                                    </span>
+                                    <span class="unlike">
+                                        <img src="../images/unlike.png" alt="" class="unlikeborder">
+                                        <span class="answer">回复</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="pay-bar">
+                    <div class="vip">
+                        <!-- 成为大会员抢先看 -->
+                        <a href="#" class="btn-pay">成为大会员抢先看</a>
+                        <div class="vipimg-icon"></div>
+                    </div>
+                </div>
+                <div class="positive">
+                    <!-- 正片 -->
+                    <div class="positive-title">
+                        <h4>正片</h4>
+                        <span class="positive-icon">
+                            <img class="iconfont" src="../images/positive-icon.png" alt="">
+                        </span>
+                        <span class="positive-progress">11/11</span>
+                        <span class="positive-order"><img class="order" src="../images/order.png" alt=""></span>
+                    </div>
+                    <div class="positive-card">
+                        <div class="card-box">
+                            <div class="item">1</div>
+                            <div class="item">2</div>
+                            <div class="item">3</div>
+                            <div class="item">4</div>
+                            <div class="item">5</div>
+                            <div class="item">6</div>
+                            <div class="item">7</div>
+                            <div class="item">8</div>
+                            <div class="item">9</div>
+                            <div class="item">10</div>
+                            <div class="item">11</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PV&其他 -->
+                <div class="other-card">
+                    <div class="other-title">PV&其他</div>
+                    <div class="formal-PV">正式PV</div>
+                </div>
+                <!-- 相关推荐 -->
+                <div class="related-testimonials">
+                    <div class="related-title">相关推荐</div>
+                    <div class="related-list">
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related1.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">处刑少女的生存之道</a>
+                                <div class="video-subtitle">全12话</div>
+                                <div class="video-count">1498.4万播放&nbsp;&nbsp;·&nbsp;&nbsp;9.2万弹幕</div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related2.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">这个治疗有点烦</a>
+                                <div class="video-subtitle">更新至第7话</div>
+                                <div class="video-count">1000.6万播放&nbsp;&nbsp;·&nbsp;&nbsp;5万弹幕</div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related3.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">RPG不动产</a>
+                                <div class="video-subtitle">更新至第9话</div>
+                                <div class="video-count">670万播放&nbsp;&nbsp;·&nbsp;&nbsp;4.9万弹幕</div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related4.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">指名！</a>
+                                <div class="video-subtitle">更新至第23话</div>
+                                <div class="video-count">591.9万播放&nbsp;&nbsp;·&nbsp;&nbsp;2.4万弹幕</div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related5.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">创之界限</a>
+                                <div class="video-subtitle">全12话</div>
+                                <div class="video-count">974.1万播放&nbsp;&nbsp;·&nbsp;&nbsp;3.2万弹幕</div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related6.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">恋爱要在世界征服后</a>
+                                <div class="video-subtitle">更新至第11话</div>
+                                <div class="video-count">1843.9万播放&nbsp;&nbsp;·&nbsp;&nbsp;13.8万弹幕</div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related7.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">东方少年</a>
+                                <div class="video-subtitle">全12话</div>
+                                <div class="video-count">1072.2万播放&nbsp;&nbsp;·&nbsp;&nbsp;2.9万弹幕</div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related8.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">街角魔族 第二季</a>
+                                <div class="video-subtitle">更新至第4话</div>
+                                <div class="video-count">387万播放&nbsp;&nbsp;·&nbsp;&nbsp;2.1万弹幕</div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related9.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">女孩的钓鱼慢活</a>
+                                <div class="video-subtitle">全12话</div>
+                                <div class="video-count">939.9万播放&nbsp;&nbsp;·&nbsp;&nbsp;10.7万弹幕</div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related10.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">骑士&魔法</a>
+                                <div class="video-subtitle">全13话</div>
+                                <div class="video-count">8965.6万播放&nbsp;&nbsp;·&nbsp;&nbsp;110.8万弹幕</div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related11.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">开挂药师的奇幻世界悠闲生活</a>
+                                <div class="video-subtitle">全12话</div>
+                                <div class="video-count">1457.4万播放&nbsp;&nbsp;·&nbsp;&nbsp;14.1万弹幕</div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <a class="related-a" href="#">
+                                <div class="related-img">
+                                    <img src="../images/related12.webp" alt="">
+                                </div>
+                            </a>
+                            <div class="related-text">
+                                <a class="video-title" href="#">好比是最终迷宫前的少年到新手村生活一般的故事</a>
+                                <div class="video-subtitle">全12话</div>
+                                <div class="video-count">7681万播放&nbsp;&nbsp;·&nbsp;&nbsp;36.8万弹幕</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

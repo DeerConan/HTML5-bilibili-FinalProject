@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/blibli.png" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 整体 -->
+    <div id="blibli">
+        <!-- 上边栏 -->
+        <header>
+            <!-- 导航栏 -->
+
+            <div id="bar01">
+                <div id="left_bar">
+                    <div class="left_bar_sp"><img src="./images/播放标志01.svg" alt="">首页</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'"><a href="./websit/comic.html"
+                            style="color: black;">番剧</a></div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">直播</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">游戏中心</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">会员购</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">漫画</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">赛事</div>
+                    <div class="left_bar_03">毕业季</div>
+                    <div class="left_bar_sp"><img src="./images/下载01.svg" alt="">下载客户端</div>
+                </div>
+                <div class="input">
+                    <input type="text" name="user_name" placeholder="搜索" />
+                    <img src="./images/搜索_search.svg" alt="">
+                </div>
+                <div id="right_bar">
+                    <div class=""><span id="login_m" style="background-color: #f7f7f7;" onclick="login_v()">登录</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/推荐01.svg" alt=""> <span>大会员</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/信息01.svg" alt=""> <span>消息</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/动态01.svg" alt=""> <span>动态</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/收藏01.svg" alt=""> <span>收藏</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/历史01.svg" alt=""> <span>历史</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/创作中心01.svg" alt="">
+                        <span>创作中心</span>
+                    </div>
+                    <div class="right_bar_sb"><span style="color: white;"><img src="./images/投稿.svg" alt="">投稿</span>
+                    </div>
+                </div>
+            </div>
+            <div id="bar">
+                <div id="left_bar">
+                    <div class="left_bar_sp"><img src="./images/播放标志.svg" alt="">首页</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'"><a href="./websit/comic.html"
+                            style="color: white;">番剧</a></div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">直播</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">游戏中心</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">会员购</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">漫画</div>
+                    <div class="left_bar_sp" onMouseMove="this.className='left_bar_02'"
+                        onMouseOut="this.className='left_bar_sp'">赛事</div>
+                    <div class="left_bar_03">毕业季</div>
+                    <div class="left_bar_sp"><img src="./images/下载.svg" alt="">下载客户端</div>
+                </div>
+                <div class="input">
+                    <input type="text" name="user_name" placeholder="搜索" />
+                    <img src="./images/搜索_search.svg" alt="">
+                </div>
+                <div id="right_bar">
+                    <div class=""><span id="login_m" onclick="login_v()">登录</span></div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/推荐.svg" alt=""> <span>大会员</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/信息.svg" alt=""> <span>消息</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/动态.svg" alt=""> <span>动态</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/收藏.svg" alt=""> <span>收藏</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/历史.svg" alt=""> <span>历史</span>
+                    </div>
+                    <div class="right_bar_sp" onMouseMove="this.className='right_bar_02'"
+                        onMouseOut="this.className='right_bar_sp'"><img src="./images/创作中心.svg" alt="">
+                        <span>创作中心</span>
+                    </div>
+                    <div class="right_bar_sb"><span><img src="./images/投稿.svg" alt="">投稿</span></div>
+                </div>
+            </div>
+            <!-- 导航栏下面的banner -->
+            <div id="banner">
+                <video id="banner_video" muted autoplay loop>
+                    <source src="./video/bilibili.mp4" type="video/mp4">
+                    </source>
+                </video>
+                <!-- banner上的logo -->
+                <div id="banner_logo">
+                    <img src="./images/banner_logo.png" width="160px" height="80px" alt="">
+                </div>
+            </div>
+            <!-- 频道导航栏 -->
+            <div id="channel">
+                <div id="left_channel">
+                    <div class="left_channel_hot">
+                        <div class="left_channel_c01">
+                            <img width="70%" height="70%" src="./images/动态.svg" alt="">
+                        </div>
+                        <span>动态</span>
+                    </div>
+                    <div class="left_channel_hot">
+                        <div class="left_channel_c02">
+                            <img width="70%" height="70%" src="./images/hot.png" alt="">
+                        </div>
+                        <span>热门</span>
+                    </div>
+                    <div class="left_channel_hot">
+                        <div class="left_channel_c03">
+                            <img width="70%" height="70%" src="./images/CirclesThree.png" alt="">
+                        </div>
+                        <span>频道</span>
+                    </div>
+                </div>
+                <div id="center_channel">
+                    <a href="websit/comic.html">番剧</a>
+                    <a href="#">电影</a>
+                    <a href="#">国创</a>
+                    <a href="#">电视剧</a>
+                    <a href="#">综艺</a>
+                    <a href="#">纪录片</a>
+                    <a href="#">动漫</a>
+                    <a href="#">游戏</a>
+                    <a href="#">鬼畜</a>
+                    <a href="#">音乐</a>
+                    <a href="#">舞蹈</a>
+                    <a href="#">影视</a>
+                    <a href="#">娱乐</a>
+                    <a href="#">知识</a>
+                    <a href="#">科技</a>
+                    <a href="#">资讯</a>
+                    <a href="#">美食</a>
+                    <a href="#">生活</a>
+                    <a href="#">汽车</a>
+                    <a href="#">时尚</a>
+                    <a href="#">运动</a>
+                    <a href="#">更多</a>
+                </div>
+                <div id="right_channel">
+                    <a href="websit/special_column.html"><img src="./images/文本.svg" alt=""> 专栏</a>
+                    <a href="#"><img src="./images/云直播.svg" alt=""> 直播</a>
+                    <a href="#"><img src="./images/旗子.svg" alt=""> 活动</a>
+                    <a href="#"><img src="./images/课程.svg" alt=""> 课堂</a>
+                    <a href="#"><img src="./images/互动社区.svg" alt=""> 社区中心</a>
+                    <a href="#"><img src="./images/音乐.svg" alt="">新歌热榜</a>
+                </div>
+            </div>
+        </header>
+        <!-- 主要部分  -->
+        <main>
+            <!-- 推荐 -->
+            <section id="recommend">
+                <article id="recommend-swipe">
+                    <div id="swipe_bgc">
+                        <div id="text1">
+                            2020毕业季『哔哩哔哩』
+                        </div>
+                        <div id="bnts">
+                            <span>
+                                < </span>
+                                    <span>></span>
+                        </div>
+                        <ul id="dots">
+                            <li class="on"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <ul id="imglist">
+                        <li>
+                            <img src="./images/swipe1.png" width="100%" height="80%" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/swipe2.png" width="100%" height="80%" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/swipe3.png" width="100%" height="80%" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/swipe4.png" width="100%" height="80%" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/swipe5.png" width="100%" height="80%" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/swipe6.png" width="100%" height="80%" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/swipe7.png" width="100%" height="80%" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/swipe8.png" width="100%" height="80%" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/swipe9.png" width="100%" height="80%" alt="" />
+                        </li>
+                    </ul>
+                    <!-- <img width="100%" height="80%" src="./images/毕业季.png" alt=""> -->
+                </article>
+                <!-- 图片_视频板块 -->
+                <article id="recommend_video_card">
+                    <div class="video_card">
+                        <div id="recommend_v" onmouseleave="Cimg()">
+                            <a href="/websit/player.html">
+                                <video width="100%" muted autoplay>
+                                    <source src="video/魔法使黎明.mp4" type="video/mp4">
+                                    </source>
+                                </video>
+                            </a>
+                        </div>
+                        <div id="recommend_i" onmouseenter="Cvideo()">
+                            <img width="100%" height="100%" src="./images/card1.png" alt="">
+                            <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt=""> 3000万<img
+                                    src="./images/评论.svg" alt=""> 2540 <div class="icon_time">04:48</div>
+                            </div>
+                        </div>
+                        <div class="video_card_title"><a id="player" href="websit/player.html"
+                                style="font-size: 14px;margin-top: 5px;">：我至今，依然无法想起。自己究竟是什么——。"魔法使黎明期"</a></div>
+                        <div class="video_card_owner">导演 : 桑原智</div>
+                    </div>
+                    <div class="video_card">
+                        <img width="94%" height="65%" src="./images/card2.png" alt="">
+                        <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt="">3万<img
+                                src="./images/评论.svg" alt="">254 <div class="icon_time">01:28</div>
+                        </div>
+                        <div class="video_card_title">至“夜晚的风终会吹散不合时宜的我们”</div>
+                        <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 她脚踝银铃响了 · 6.1</div>
+                    </div>
+                    <div class="video_card">
+                        <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt="">3万<img
+                                src="./images/评论.svg" alt="">254 <div class="icon_time">01:28</div>
+                        </div>
+                        <img width="94%" height="65%" src="./images/card3.png" alt="">
+                        <div class="video_card_title">播放超亿，火爆全网终出第二季!奶爆纯爱续作导视!!</div>
+                        <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 莫实说 · 6.6</div>
+                    </div>
+                    <div class="video_card">
+                        <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt="">3万<img
+                                src="./images/评论.svg" alt="">254 <div class="icon_time">01:28</div>
+                        </div>
+                        <img width="94%" height="65%" src="./images/card4.png" alt="">
+                        <div class="video_card_title">法国浪漫恋爱广告：迟到的初恋</div>
+                        <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 广告圈poor猴 · 6.5</div>
+                    </div>
+                    <div class="video_card">
+                        <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt="">3万<img
+                                src="./images/评论.svg" alt="">254 <div class="icon_time">01:28</div>
+                        </div>
+                        <img width="94%" height="65%" src="./images/card5.png" alt="">
+                        <div class="video_card_title">“真正的高贵是超越过去的自己！”</div>
+                        <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 姜斯特洛夫斯基 · 6.10</div>
+                    </div>
+                    <div class="video_card">
+                        <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt="">3万<img
+                                src="./images/评论.svg" alt="">254 <div class="icon_time">01:28</div>
+                        </div>
+                        <img width="94%" height="65%" src="./images/溯.png" alt="">
+                        <div class="video_card_title">曾火遍全网的《溯》，究竟唤醒了多少失落的灵魂！！！</div>
+                        <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 在下蕾姆有何贵干 · 5.20</div>
+                    </div>
+                </article>
+            </section>
+            <!-- 广告 -->
+            <section class="advertisement"><img src="./images/广告1.jpg" width="100%" alt=""></section>
+            <!-- 直播板块 -->
+            <section id="live_broadcast">
+                <article id="live_broadcast_left">
+                    <div id="live_broadcast_title">
+                        <img src="./images/直播2.png" alt=""><span>直播</span>
+                        <div class="Change"><img src="./images/换一换.png" alt="">换一换</div>
+                        <div class="more">查看更多></div>
+                    </div>
+                    <article id="live_broadcast_video_card">
+                        <div class="video_card">
+                            <img width="94%" height="75%" src="./images/live_broadcast1.png" alt="">
+                            <div class="video_card_title">
+                                <div class="live_broadcast_icon"><img width="10px" height="10px" src="./images/直播中.gif"
+                                        alt=""> 直播中</div>歌
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 葡冷尔子gagako</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="75%" src="./images/live_broadcast2.png" alt="">
+                            <div class="video_card_title">
+                                <div class="live_broadcast_icon"><img width="10px" height="10px" src="./images/直播中.gif"
+                                        alt=""> 直播中</div>一个枪的打
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 尼奥喵Neil_Channel</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="75%" src="./images/live_broadcast3.png" alt="">
+                            <div class="video_card_title">
+                                <div class="live_broadcast_icon"><img width="10px" height="10px" src="./images/直播中.gif"
+                                        alt=""> 直播中</div>『温柔打野姐姐』双区带粉
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 凌小雪yo</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="75%" src="./images/live_broadcast4.png" alt="">
+                            <div class="video_card_title">
+                                <div class="live_broadcast_icon"><img width="10px" height="10px" src="./images/直播中.gif"
+                                        alt=""> 直播中</div>全职.深渊.晶蝶.看号
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 露伴居</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="75%" src="./images/live_broadcast5.png" alt="">
+                            <div class="video_card_title">
+                                <div class="live_broadcast_icon"><img width="10px" height="10px" src="./images/直播中.gif"
+                                        alt=""> 直播中</div>【搞笑萌新被鹤观整哭惹】
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 金女王大人丶</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="75%" src="./images/live_broadcast6.png" alt="">
+                            <div class="video_card_title">
+                                <div class="live_broadcast_icon"><img width="10px" height="10px" src="./images/直播中.gif"
+                                        alt=""> 直播中</div>魂土日常爬塔 蚌精预约
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> _火神</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="75%" src="./images/live_broadcast7.png" alt="">
+                            <div class="video_card_title">
+                                <div class="live_broadcast_icon"><img width="10px" height="10px" src="./images/直播中.gif"
+                                        alt=""> 直播中</div>快上车！
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> GFY森屿</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="75%" src="./images/live_broadcast8.png" alt="">
+                            <div class="video_card_title">
+                                <div class="live_broadcast_icon"><img width="10px" height="10px" src="./images/直播中.gif"
+                                        alt=""> 直播中</div>帅哥必看
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 炮炮baby</div>
+                    </article>
+                </article>
+                <aside id="live_broadcast_right">
+                    <div id="live_broadcast_title">
+                        <div class="recommend">为你推荐</div>
+                    </div>
+                    <article id="live_broadcast_video_card">
+                        <div class="video_card">
+                            <img width="94%" height="75%" src="./images/live_broadcast9.png" alt="">
+                            <div class="video_card_title">来不及解释了，快上车！
+                            </div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="75%" src="./images/live_broadcast10.png" alt="">
+                            <div class="video_card_title">CSGO夏日激励计划
+                            </div>
+                        </div>
+                    </article>
+                </aside>
+            </section>
+            <!-- 广告 -->
+            <section class="advertisement"><img src="./images/广告2.jpg" width="100%" alt=""></section>
+            <!-- 动画板块 -->
+            <section id="animation">
+                <article id="animation_left">
+                    <div id="animation_title">
+                        <img width="30px" height="30px" src="./images/动画.png" alt=""><span>动画</span>
+                        <div class="Change"><img src="./images/换一换.png" alt="">换一换</div>
+                        <div class="more">查看更多></div>
+                    </div>
+                    <article id="animation_video_card">
+                        <div class="video_card">
+                            <img width="94%" height="70%" src="./images/animation1.png" alt="">
+                            <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt=""> 504万<img
+                                    src="./images/评论.svg" alt=""> 254 <div class="icon_time">01:28</div>
+                            </div>
+                            <div class="video_card_title">要 相 信 柯 学 ！
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt="">声物课 ·6-17</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="70%" src="./images/animation2.png" alt="">
+                            <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt="">504万<img
+                                    src="./images/评论.svg" alt=""> 254 <div class="icon_time">01:28</div>
+                            </div>
+                            <div class="video_card_title">《LoveLive!虹咲学园学园偶像同好会》
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 依然洳雪·17小时前</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="70%" src="./images/animation3.png" alt="">
+                            <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt=""> 504万<img
+                                    src="./images/评论.svg" alt=""> 254 <div class="icon_time">01:28</div>
+                            </div>
+                            <div class="video_card_title">“我听见窗外簌簌的在下雪，一转眼就是十年”
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 姬叶零 ·5-25</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="70%" src="./images/animation4.png" alt="">
+                            <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt=""> 504万<img
+                                    src="./images/评论.svg" alt=""> 254 <div class="icon_time">01:28</div>
+                            </div>
+                            <div class="video_card_title">柯南名场面
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 露伴居·5-4</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="70%" src="./images/animation5.png" alt="">
+                            <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt=""> 504万<img
+                                    src="./images/评论.svg" alt=""> 254 <div class="icon_time">01:28</div>
+                            </div>
+                            <div class="video_card_title">【Shu Yamino/熟切】唤醒心灵（奥数魔刃版）
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> Shu的香蕉种植园 ·6-5</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="70%" src="./images/animation6.png" alt="">
+                            <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt=""> 504万<img
+                                    src="./images/评论.svg" alt=""> 254 <div class="icon_time">01:28</div>
+                            </div>
+                            <div class="video_card_title">【春游回学校的大巴上】45分钟久坐提醒//雨声/雷声/汽车内部
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt="">阿金的小院子 ·5-7</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="70%" src="./images/animation7.png" alt="">
+                            <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt=""> 504万<img
+                                    src="./images/评论.svg" alt=""> 254 <div class="icon_time">01:28</div>
+                            </div>
+                            <div class="video_card_title">“爱人的心脏是颠倒世界的一万六千亩玫瑰。”
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 婠芫 ·6-11</div>
+                        </div>
+                        <div class="video_card">
+                            <img width="94%" height="70%" src="./images/animation8.png" alt="">
+                            <div class="video_card_icon"><img src="./images/24gl-playSquare.svg" alt=""> 504万<img
+                                    src="./images/评论.svg" alt=""> 254 <div class="icon_time">01:28</div>
+                            </div>
+                            <div class="video_card_title">主力累了 我是外挂
+                            </div>
+                            <div class="video_card_owner"><img src="./images/UP主_32.png" alt=""> 小枫高能漫剪·6-11</div>
+                    </article>
+                </article>
+                <aside id="animation_right">
+                    <div id="animation_title">
+                        <div class="Ranking">排行榜</div>
+                        <div>查看更多></div>
+                    </div>
+                    <article id="animation_Ranking_card">
+                        <div class="Ranking_card" id="Ranking_card01">
+                            <div class="number"><em>1</em></div>
+
+                            <div class="Ranking_card_text01"><img src="./images/原神.png" width="130px" alt=""
+                                    style="margin-right:8px;"> 【原神夏日放映节】动画短片：无法忘记的事</div>
+                        </div>
+                        <div class="Ranking_card Ranking_card_gray" id="Ranking_card02">
+                            <div class="number"><em>2</em></div>
+
+                            <div class="Ranking_card_text">【原神夏日放映节】动画短片—「燃火之蝶」</div>
+                        </div>
+                        <div class="Ranking_card" id="Ranking_card03">
+                            <div class="number"><em>3</em></div>
+
+                            <div class="Ranking_card_text">好评如潮！逆风翻盘！《特利迦奥特曼》舞台剧最终章完结吐槽！</div>
+                        </div>
+                        <div class="Ranking_card Ranking_card_gray">
+                            <div class="number"><em>4</em></div>
+
+                            <div class="Ranking_card_text">不让九条睡觉的荒泷一斗</div>
+                        </div>
+                        <div class="Ranking_card">
+                            <div class="number"><em>5</em></div>
+
+                            <div class="Ranking_card_text">为什么看完一部动画会有一种怅然若失的感觉。</div>
+                        </div>
+                        <div class="Ranking_card Ranking_card_gray">
+                            <div class="number"><em>6</em></div>
+
+                            <div class="Ranking_card_text">要 相 信 柯 学 ！</div>
+                        </div>
+                        <div class="Ranking_card">
+                            <div class="number"><em>7</em></div>
+
+                            <div class="Ranking_card_text">【B限首播/全熟】你好BILIBILI【Mysta Rias】</div>
+                        </div>
+                        <div class="Ranking_card Ranking_card_gray" id="Ranking_card08">
+                            <div class="number"><em>8</em></div>
+
+                            <div class="Ranking_card_text">【原神夏日放映节】动画微电影：盗蒙空间</div>
+                        </div>
+                    </article>
+                </aside>
+            </section>
+        </main>
+        <!-- 底部 -->
+        <footer>
+            <section id="footer_top">
+                <section id="footer_top_0">
+                    <div>bilibili</div>
+                    <pre>关于我们   联系我们   用户协议   加入我们   友情链接</pre>
+                    <pre>隐私协议   bilibili认证   Investor Relations</pre>
+                </section>
+                <section id="footer_top_1">
+                    <div>传送门</div>
+                    <pre>协议汇总   活动中心   活动专题页   侵权申诉   帮助中心   社区中心</pre>
+                    <pre>壁纸站  广告合作   名人堂   MCN管理中心   高级弹幕   品牌号官网</pre>
+                </section>
+                <section id="footer_top_2">
+                    <div class="footer_top_2_circular">
+                        <div class="c01">
+                            <img width="60%" height="60%" src="./images/下载 (1).svg" alt="">
+                        </div>
+                        <span>下载APP</span>
+                    </div>
+                    <div class="footer_top_2_circular">
+                        <div class="c02">
+                            <img width="60%" height="60%" src="./images/实心.svg" alt="">
+                        </div>
+                        <span>公益</span>
+                    </div>
+                    <div class="footer_top_2_circular">
+                        <div class="c03">
+                            <img width="60%" height="60%" src="./images/新浪微博.svg" alt="">
+                        </div>
+                        <span>官方微博</span>
+                    </div>
+                    <div class="footer_top_2_circular">
+                        <div class="c04">
+                            <img width="60%" height="60%" src="./images/微信.svg" alt="">
+                        </div>
+                        <span>官方微信</span>
+                    </div>
+                </section>
+            </section>
+            <section id="footer_bottom">
+                <div id="footer_bottom_1">营业执照&nbsp; 信息网络传播视听节目许可证：&nbsp;0910417&nbsp;网络文化经营许可证&nbsp;
+                    沪网文【2019】3804-274号&nbsp;广播电视节目制作经营许可证：（沪）字第01248号&nbsp;增值电信业务经营许可证 &nbsp;沪B2-20100043</div>
+                <div>互联网ICP备案：&nbsp;沪ICP备13002172号-3&nbsp;出版物经营许可证 &nbsp;沪批字第U6699 号&nbsp;互联网药品信息服务资格证
+                    沪-非经营性-2016-0143&nbsp;营业性演出许可证 沪市文演（经）00-2253 |</div>
+                <div>
+                    不良信息举报邮箱：&nbsp;help@bilibili.com涉未成年举报邮箱：teenprotect@bilibili.com&nbsp;不良信息举报电话：&nbsp;4006262233转1&nbsp;上海互联网举报中心
+                    |&nbsp;12345政务服务便民热线 |</div>
+                <div><img src="./images/logo.png" width="16px" height="16px" alt=""> 沪公网安备31011002002436号
+                    |&nbsp;儿童色情信息举报专区
+                    |&nbsp;扫黄打非举报</div>
+                <div>
+                    网上有害信息举报专区：&nbsp;<img src="./images/logo2.png" width="14px" height="14px" alt="">
+                    中国互联网违法和不良信息举报中心&nbsp;亲爱的市民朋友，上海警方反诈劝阻电话“96110”&nbsp;系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。
+                </div>
+                <div>公司名称：上海宽娱数码科技有限公司 |公司地址：&nbsp;上海市杨浦区政立路485号 |&nbsp;电话：&nbsp;021-25099888</div>
+                <div id="footer_bottom_8">
+                    <img src="./images/footer01.png" width="96px" height="39px" alt="">
+                    <img src="./images/footer02.png" width="96px" height="39px" alt="">
+                    <img src="./images/footer03.png" width="96px" height="39px" alt="">
+                </div>
+            </section>
+        </footer>
+    </div>
+    <!-- 登录 -->
+    <div id="login_v">
+        <div class="v">
+            <div id="login">
+                <div id="login_left">
+                    <div style="font-size: 18px;">扫二维码登录</div>
+                    <img src="./images/二维码.png" alt="">
+                    <div>
+                        请使用<i style="color:#4fabdd ;">哔哩哔哩客户端</i><p></p>    
+                        扫码登录或扫码下载APP
+                    </div>
+                </div>
+
+                <div id="login_right">
+                    <div ><span style="color: #4fabdd;">登录</span>&nbsp;&nbsp; | &nbsp;&nbsp;注册</div>
+                    <div class="input2"><span>账号</span><input type="text" placeholder="请输入账号"></div>
+                    <div class="input3"><span>密码</span><input type="text" placeholder="请输入密码"></div>
+                    <div> <button>注册</button><button class="dl">登录</button> </div>
+                    <div class="other_title">其他方式登陆</div>
+                    <div class="other2">
+                        <img src="./images/wechat.png" alt="" width="18px" height="18px">
+                        <a href="">微信登录</a>
+                        <img src="./images/weibo.png" alt="" width="18px" height="18px">
+                        <a href="">微博登录</a>
+                        <img src="./images/QQ.png" alt="" width="18px" height="18px">
+                        <a href="">QQ登录</a>
+                    </div>
+                </div>
+
+            </div>
+            <div id="no" onclick="login_n()">x</div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

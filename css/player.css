@@ -1,0 +1,1487 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    min-width: 1500px;
+}
+
+header {
+    position: relative;
+    height: 64px;
+}
+
+/* 导航栏 */
+#bar01 {
+    display: flex;
+    min-width: 1500px;
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    height: 64px;
+    z-index: 1000;
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0 0 8px #bababa;
+}
+
+#left_bar {
+    height: 64px;
+    padding-left: 0.5%;
+    display: flex;
+    width: 38%;
+}
+
+#left_bar::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#left_bar div {
+    margin-left: 3%;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#left_bar div img,
+#right_bar div img {
+    margin-right: 5px;
+}
+
+.left_bar_sp,
+.right_bar_sb {
+    line-height: 64px;
+}
+
+.left_bar_03 {
+    font-size: 18px !important;
+    line-height: 64px;
+    color: rgb(71, 118, 213);
+}
+
+.left_bar_02 {
+    line-height: 58px;
+}
+
+.input {
+    margin-top: 12px;
+    width: 28.5%;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+.input input{
+    background-color: #f9f9f9;
+}
+
+.input img {
+    margin: 10px;
+}
+
+.input input:focus {
+    outline: none;
+    background-color: #e2e2e2be;
+}
+
+.input input {
+    padding-left: 20px;
+    border: none;
+    height: 34px;
+    border-radius: 6px;
+    margin-top: 3px;
+    margin-left: 20px;
+    width: 86%;
+}
+
+#right_bar {
+    height: 64px;
+    padding-left: 1%;
+    display: flex;
+    width: 33.5%;
+}
+
+#right_bar div {
+    margin-left: 3.5%;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.right_bar_sp,
+.right_bar_02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+.right_bar_sp img {
+    margin-top: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.right_bar_02 img {
+    margin-bottom: 3px;
+    margin-top: 9px;
+    width: 20px;
+    height: 20px;
+}
+
+.right_bar_sb span {
+    margin-top: 12px;
+    border-radius: 5px;
+    height: 30px;
+    width: 90px;
+    display: block;
+    background-color: #ffffff;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(246, 131, 150);
+}
+
+#login_m {
+    margin-top: 12px;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background-color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    color: rgb(13, 158, 242);
+}
+
+/* 导航栏下面的banner */
+#banner {
+    position: relative;
+    height: 163px;
+}
+
+#banner::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#banner_video {
+    top: 40%;
+    width: 100%;
+    /* 向上移动50% */
+    transform: translateY(-30%);
+    opacity: 0.9;
+}
+
+/* banner上的logo */
+#banner_logo {
+    position: absolute;
+    left: 30px;
+    top: 40%;
+    z-index: 100;
+}
+
+#channel {
+    height: 112px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+#left_channel {
+    height: 100%;
+    display: flex;
+    width: 15%;
+}
+
+.left_channel_hot {
+    margin-right: 22px;
+    text-align: center;
+}
+
+.left_channel_c01,
+.left_channel_c02,
+.left_channel_c03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: rgb(252, 144, 90);
+    margin-bottom: 4px;
+}
+
+.left_channel_c02 {
+    background-color: rgb(252, 106, 90);
+}
+
+.left_channel_c03 {
+    background-color: rgb(88, 203, 131);
+}
+
+#center_channel {
+    margin-left: 10px;
+    padding-top: 18px;
+    height: 100%;
+    display: grid;
+    width: 70%;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 40px);
+}
+
+#center_channel a {
+    width: 76px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 4px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 3px;
+    color: rgb(105, 105, 105);
+}
+
+
+#right_channel {
+    height: 60%;
+    margin: 20px;
+    padding-left: 20px;
+    padding-top: 6px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 40px);
+    width: 16%;
+    border-left: 0.5px solid rgb(146, 146, 146);
+}
+
+#right_channel a {
+    color: rgb(105, 105, 105);
+    display: flex;
+}
+
+#right_channel a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+/* 登录 */
+#login_v{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;    
+    margin: 0 auto;    
+    background: rgba(0,0,0,0.3);
+    z-index: 10000;    
+    position: fixed;
+}
+
+.v {
+    background-color: #FFFFFF;    
+    z-index: 10000;
+    position: relative;
+    margin:0 auto;
+    border-radius: 10px;
+    margin-top: 9.5%;
+    width: 54%;
+    height: 58%;
+    display: flex;
+    background-image: url(../images/login_bgc02.png),url(../images/login_bgc01.png);
+    background-position: 0 100%,100% 100%;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 14%;
+}
+
+#login_v .v img{
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-right: 10px;
+}
+.v::before{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#no {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    font-size: 28px;
+    color: rgb(187, 187, 187);
+    right: 18px;
+    top: 10px;
+    text-align: center;
+}
+
+#no:hover{
+    cursor: pointer;
+}
+.main {
+    position: relative;
+    width: 1200px;
+    height: 1270px;
+    margin: 0 auto;
+}
+/* 左侧栏 */
+.left {
+    width: 850px;
+    height: 1270px;
+    float: left;
+}
+/* 视频控件 */
+.container1 {
+    position: relative;
+    display: flex;
+    width: 850px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.container1 #video {
+    width: 850px;
+    height: 500px;
+}
+
+.container1 .controls {
+    position: absolute;
+    bottom: 25px;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.2;
+    transition: opacity 0.4s;
+}
+
+.container1:hover .controls {
+    opacity: 1;
+}
+
+.container1 .controls button {
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 2px 1px 2px #000;
+    border: none;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+}
+
+.container1 .controls .timeline {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-right: 3px solid #ccc;
+    border-left: 3px solid #ccc;
+}
+
+.container1 .controls .timeline .bar {
+    background: rgb(1, 1, 65);
+    height: 4px;
+    flex: 1;
+}
+
+.container1 .controls .timeline .bar .inner {
+    background: #ccc;
+    width: 0%;
+    height: 100%;
+}
+
+.fa {
+    font-size: 20px !important;
+}
+
+.video_bottom {
+    width: 850px;
+    height: 40px;
+    background-color: white;
+    margin-top: -10px;
+    position: absolute;
+}
+
+.watch {
+    width: 192px;
+    height: 17px;
+    margin-left: 15px;
+    margin-top: 11px;
+    font-size: 12px;
+    color: rgba(109, 109, 109, 0.951);
+    display: inline-block;
+}
+
+.watch_right {
+    width: 65%;
+    height: 40px;
+    float: right;
+    display: flex;
+}
+
+.barrage {
+    width: 30px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 10px 5px 0 25px;
+    background-color: rgb(91, 151, 220);
+    display: inline-block;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 3px 0 0 13px;
+    background-color: white;
+    font-size: 5px;
+    color: rgb(91, 151, 220);
+    text-align: center;
+}
+
+.watch_right .danmu {
+    margin-left: 10px;
+    height: 46px;
+    width: 30px;
+    display: block;
+}
+
+.watch_right .danmu img {
+    height: 22px;
+    width: 24px;
+    margin-top: 9px;
+}
+
+.watch_right .inputbar {
+    width: 430px;
+    display: flex;
+    height: 30px;
+    color: #999;
+    float: left;
+    margin: 5px 0 0 10px;
+}
+
+.watch_right .inputbar .input-left {
+    width: 370px;
+    height: 30px;
+    display: flex;
+    border: 1px solid #e7e7e7;
+    background-color: #f4f4f4;
+    float: left;
+}
+
+.inputbar .input-left .user-wrap {
+    height: 17px;
+    width: 270px;
+    color: #999999;
+    padding: 0 10px;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.inputbar .input-left .user-wrap a {
+    color: #00a1d6;
+    padding: 0 4px;
+    font-size: 13px;
+}
+
+.inputbar .input-left .barrage-etiquette {
+    height: 30px;
+    line-height: 25px;
+    font-size: 13px;
+    float: left;
+    display: flex;
+    color: #757575;
+}
+
+.inputbar .input-left .barrage-etiquette span {
+    width: 25px;
+    height: 27px;
+    float: left;
+}
+
+.inputbar .input-left .barrage-etiquette img {
+    width: 25px;
+    height: 27px;
+    float: left;
+}
+
+.inputbar .send-button {
+    background-color: #757575;
+    height: 32px;
+    width: 60px;
+    color: white;
+    font-size: 13px;
+    line-height: 32px;
+    text-align: center;
+}
+/* 媒体 */
+.left .media-wrapper {
+    margin-top: 30px;
+    padding-top: 16px;
+}
+
+.media-wrapper .media-bar {
+    height: 40px;
+}
+
+.media-bar .like-box {
+    position: relative;
+    display: block;
+    float: left;
+    height: 28px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.like-box img {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.like-box .span-text {
+    display: inline-block;
+    vertical-align: top;
+    width: 58px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #505050;
+}
+
+.like-box .span-phonetext {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #505050;
+}
+
+.media-box {
+    border-top: 1px solid #e7e7e7;
+    padding: 16px 0;
+    height: 179px;
+}
+
+.media-box .media-box-a {
+    width: 134px;
+    height: 179px;
+    position: relative;
+    display: block;
+    float: left;
+    background-color: #f4f5f7;
+}
+
+.media-box .media-box-a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.media-box .media-right {
+    position: relative;
+    padding-left: 150px;
+    height: 100%;
+}
+
+.media-box .media-right .media-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    padding-right: 240px;
+}
+
+.media-box .media-right .media-count {
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.media-box .media-right .media-drama {
+    margin-bottom: 8px;
+    display: flex;
+    width: 900px;
+}
+
+.media-drama .drama-a {
+    color: #212121;
+    font-size: 12px;
+    margin-right: 10px;
+    height: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.media-drama .drama-span {
+    margin-right: 10px;
+    font-size: 12px;
+    vertical-align: middle;
+    line-height: 16px;
+}
+
+.drama-right {
+    vertical-align: middle;
+    height: 16px;
+    margin-left: 15px;
+    display: flex;
+}
+
+.drama-right .line {
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background-color: silver;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.drama-right .drama-info {
+    height: 16px;
+    display: flex;
+}
+
+.drama-info .drama-info-a {
+    height: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+}
+
+.drama-info .drama-info-a .drama-img {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 4px;
+    overflow: hidden;
+    margin-top: -2px;
+}
+
+.drama-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.drama-info .drama-info-a .up-name {
+    height: 16px;
+    line-height: 16px;
+    color: #FB7299;
+    font-size: 12px;
+    float: left;
+}
+
+.drama-info .focus {
+    height: 16px;
+    line-height: 16px;
+    color: #00b5e5;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.media-right .dramabox {
+    position: relative;
+    color: #212121;
+    font-size: 12px;
+    width: 700px;
+    height: 50px;
+    vertical-align: top;
+    min-height: 36px;
+    white-space: normal;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: flex;
+}
+
+.drama-text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    vertical-align: top;
+    min-height: 36px;
+    width: 390px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+    z-index: 2;
+    margin-top: -10px;
+}
+
+.dramabox i {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    height: 18px;
+    top: 20px;
+    font-style: normal;
+    color: #00a1d6;
+    cursor: pointer;
+}
+
+.media-score .score {
+    display: block;
+    width: 37px;
+    height: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    font-size: 24px;
+    color: #ffa726;
+}
+
+.fen {
+    font-size: 12px;
+    padding-top: 9px;
+    color: #ffa726;
+}
+
+.media-score p {
+    font-size: 12px;
+    color: #999;
+    height: 16px;
+    line-height: 16px;
+}
+
+.media-right .media-rightbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 32px;
+}
+
+.media-rightbar .appraise {
+    height: 30px;
+    border: 1px solid silver;
+    border-radius: 2px;
+    float: left;
+    padding: 0 10px;
+    color: #505050;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.appraise .starbox {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    vertical-align: top;
+    margin-right: 2px;
+    padding-top: 6px;
+    list-style: none;
+}
+
+.starbox li {
+    display: inline-block;
+    margin-right: 1px;
+    width: 15px;
+    height: 15px;
+    list-style: none;
+}
+
+.starbox li .star-border {
+    width: 15px;
+    height: 15px;
+}
+
+.appraise span {
+    display: inline-block;
+    height: 30px;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.media-rightbar .chase-box {
+    display: flex;
+    position: relative;
+    float: left;
+    width: 72px;
+    height: 32px;
+    background-color: #FB7299;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.chase-box .love {
+    height: 20px;
+    width: 15px;
+    margin-top: 6px;
+    margin-left: 12px;
+}
+
+.chase-box span {
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 5px;
+}
+/* 点评 */
+.left .review {
+    border-top: 1px solid #e7e7e7;
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e9ef;
+}
+
+.review .review-title {
+    height: 24px;
+    margin-bottom: 16px;
+    color: #212121;
+    display: flex;
+}
+
+.review-title .review-h4 {
+    height: 24px;
+    font-size: 16px;
+    width: 790px;
+    font-weight: 400;
+    display: block;
+    float: left;
+    margin-left: 5px;
+}
+
+.review-title .select-all {
+    color: #212121;
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    float: right;
+}
+
+.review .review-list {
+    height: 152px;
+    /* 文本不换行 */
+    white-space: nowrap;
+}
+
+.review-list .review-item {
+    position: relative;
+    display: inline-block;
+    width: 32.1%;
+    height: 152px;
+    padding-right: 10px;
+    /* 位于顶部 */
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.review-body {
+    height: 100%;
+    padding: 12px 16px;
+    border-radius: 2px;
+    background-color: #f4f4f4;
+}
+
+.review-body .review-header {
+    height: 18px;
+    margin-bottom: 8px;
+}
+
+.review-header .review-author {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    color: #FB7299;
+    font-size: 12px;
+    float: left;
+    white-space: nowrap;
+    margin-right: 8px;
+}
+
+.review-header .review-star {
+    display: block;
+    float: left;
+    height: 18px;
+    width: 70px;
+    list-style: none;
+}
+
+.review-star li {
+    vertical-align: top;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+}
+
+.review-star .star-li {
+    margin-right: 1px;
+}
+
+.review-star li .star {
+    width: 16px;
+    height: 16px;
+}
+
+.review-star li .star-border {
+    width: 15px;
+    height: 15px;
+}
+
+.review-body .review-bodytitle {
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    color: #212121;
+    margin-bottom: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.review-body .review-content {
+    height: 54px;
+    font-size: 12px;
+    color: #212121;
+    overflow: hidden;
+    white-space: normal;
+    line-height: 18px;
+}
+
+.review-body .leftdown-time {
+    position: absolute;
+    left: 17px;
+    bottom: 12px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #999;
+}
+/* 评论区 */
+.left .comment-box {
+    padding-top: 16px;
+}
+
+.comment-box .c-head {
+    margin-bottom: 20px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #222;
+}
+
+.comment-box .comment {
+    position: relative;
+    background-color: #fff;
+}
+
+.comment .notice {
+    margin-bottom: 10px;
+}
+
+.comment .comment-header {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e5e9ef;
+    height: 37px;
+}
+
+.comment-header .order-box {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.order-box .order-ul {
+    list-style: none;
+}
+
+.order-ul .hot-sort {
+    list-style: none;
+    border-bottom: 1px solid #00a1d6;
+    color: #00a1d6;
+    padding: 8px 0;
+    margin-right: 16px;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    font-weight: bold;
+}
+
+.comment .no-login {
+    height: 102px;
+    margin: 10px 0;
+    position: relative;
+    padding-top: 15px;
+    box-sizing: content-box;
+}
+
+.no-login .user-face {
+    position: absolute;
+    width: 82px;
+    height: 65px;
+}
+
+.user-face .noface {
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+}
+
+.noface .noface-img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: 30%;
+    top: 13%;
+}
+
+.no-login .textarea-box {
+    position: relative;
+    margin-left: 80px;
+    margin-right: 85px;
+}
+
+.textarea-box .text-box .text {
+    display: block;
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    color: #777;
+    background-color: #e5e9ef;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 64px;
+}
+
+.text .login-btn {
+    color: white;
+    background-color: #00a1d6;
+    padding: 4px 9px;
+    margin: 0 3px;
+    border-radius: 4px;
+}
+
+.textarea-box .sendtext-btn {
+    width: 70px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    right: -80px;
+    padding: 4px 15px;
+    font-size: 14px;
+    color: #b8c0cc;
+    background-color: #e5e9ef;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #e5e9ef;
+    cursor: default;
+}
+
+.comment-emjio {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    width: 66px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 80px;
+    margin-top: 3px;
+    color: #99a2aa;
+    border: 1px solid #e5e9ef;
+    background-color: #e5e9ef;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px 0 rgb(106 115 133 / 25%);
+}
+
+.comment-emjio .emjio {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    margin-left: 7px;
+}
+
+.comment-emjio .emjio-text {
+    margin-left: 3px;
+    margin-top: 1px;
+}
+
+.comment .comment-list {
+    padding-top: 20px;
+}
+
+.comment-list .userface {
+    margin-top: 24px;
+    position: absolute;
+    width: 82px;
+}
+
+.userface a {
+    cursor: pointer;
+}
+
+.userface a .user-emjio {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.comment-list .user-comment {
+    position: relative;
+    margin-left: 85px;
+    padding: 22px 0 14px 0;
+    border-top: 1px solid #e5e9ef;
+}
+
+.user-comment .user {
+    position: relative;
+    display: block;
+    line-height: 18px;
+    padding-bottom: 4px;
+}
+
+.user .user-name {
+    font-size: 12px;
+    color: #6d757a;
+    font-weight: bold;
+}
+
+.user a {
+    color: #00a1d6;
+    cursor: pointer;
+}
+
+.user .level {
+    margin-left: 7px;
+    vertical-align: middle;
+    line-height: 10px;
+    cursor: pointer;
+}
+
+.nameplate-icon {
+    cursor: pointer;
+    width: 20px;
+    margin-left: 2px;
+}
+
+.nameplate-img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.user-comment .nameplate-text {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2px 0;
+}
+
+.user-comment .gray-text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #99a2aa;
+    margin-top: 6px;
+}
+
+.gray-text .location-time {
+    margin-right: 15px;
+}
+
+.gray-text .like {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gray-text .like .likeborder {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+}
+
+.gray-text .unlike {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.unlikeborder {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+}
+
+.answer {
+    margin-left: 10px;
+    vertical-align: text-top;
+}
+/* 右侧栏 */
+.main .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 1270px;
+}
+/* 成为大会员抢先看 */
+.main .right .pay-bar {
+    position: relative;
+    height: 44px;
+    margin-bottom: 20px;
+}
+
+.main .pay-bar .vip {
+    position: relative;
+    height: 44px;
+    margin-top: 22px;
+}
+
+.main .pay-bar .vip .btn-pay {
+    background-color: #00a1d6;
+    display: block;
+    height: 100%;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+
+.main .pay-bar .vip .vipimg-icon {
+    background-image: url(./images/func-icon-vip.png);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    /* 不重复背景图像 */
+    background-size: contain;
+}
+/* 正片 */
+.main .positive {
+    position: relative;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.main .positive .positive-title {
+    height: 42px;
+    padding: 0 16px;
+    width: 287px;
+}
+
+.main .positive .positive-title h4 {
+    float: left;
+    display: block;
+    height: 42px;
+    width: 32px;
+    line-height: 42px;
+    font-size: 16px;
+    color: #212121;
+    font-weight: 400;
+}
+
+.main .positive .positive-title .positive-icon {
+    float: left;
+    width: 30px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #757575;
+    position: relative;
+}
+
+.iconfont {
+    width: 19px;
+    height: 19px;
+    margin: 13px auto;
+}
+
+.main .positive .positive-title .positive-progress {
+    height: 42px;
+    line-height: 42px;
+    margin-left: 160px;
+    font-size: 12px;
+    color: #999;
+}
+
+.main .positive .positive-title .positive-order {
+    margin-left: 4px;
+    width: 16px;
+    height: 13px;
+}
+
+.main .positive .positive-title .positive-order .order {
+    width: 16px;
+    height: 13px;
+}
+
+.positive-card {
+    height: 150px;
+    width: 320px;
+}
+
+.card-box {
+    width: 290px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 75px);
+    margin-left: 5px;
+}
+
+.positive-card .item {
+    background-color: #fff;
+    margin-left: 13px;
+    margin-top: 7px;
+    border-radius: 2px;
+    height: 36px;
+    border: 1px solid #e4e9ef;
+    color: #222;
+    text-align: center;
+    line-height: 36px;
+}
+/* PV&其他 */
+.main .right .other-card {
+    position: relative;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.other-card .other-title {
+    height: 42px;
+    line-height: 42px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 16px;
+}
+
+.other-card .formal-PV {
+    height: 37px;
+    line-height: 27px;
+    font-size: 12px;
+    padding-left: 17px;
+    color: #222;
+}
+/* 相关推荐 */
+.main .right .related-testimonials {
+    position: relative;
+    width: 100%;
+}
+
+.related-testimonials .related-title {
+    width: 100%;
+    margin-bottom: 12px;
+    height: 20px;
+    line-height: 20px;
+    color: #222;
+    font-size: 16px;
+}
+
+.related-testimonials .related-list {
+    width: 100%;
+}
+
+.related-list .related-item {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 12px;
+}
+
+.related-list .related-item .related-a {
+    display: block;
+    position: relative;
+    float: left;
+    width: 141px;
+    height: 80px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.related-list .related-item .related-a .related-img {
+    display: block;
+    height: 80px;
+    border-radius: 2px;
+    background-size: 50px;
+    width: 100%;
+}
+
+.related-img img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    border-radius: 2px;
+}
+
+.related-list .related-item .related-text {
+    display: flex;
+    padding-left: 12px;
+    flex-direction: column;
+    height: 80px;
+}
+
+.related-list .related-item .related-text a {
+    height: 36px;
+    line-height: 18px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.related-list .related-item .related-text .video-subtitle {
+    color: #999;
+    font-size: 12px;
+    height: 15px;
+    margin-bottom: 4px;
+}
+
+.related-list .related-item .related-text .video-count {
+    color: #999;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+}
